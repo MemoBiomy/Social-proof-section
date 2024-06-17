@@ -84,5 +84,47 @@ ul .stars {
 .card {
     border-radius: 10px;
     background-color: var(--magenta);
-    padding: 30px 20px;
+    padding: 40px 30px;
+    color: white;
+    flex-basis: calc((100% / 3) - (80px / 3));
+    position: relative;
+}
+
+.card .info {
+    display: flex;
+    align-items: center;
+}
+
+.card .label {
+    flex: 1;
+    font-weight: 700;
+}
+
+.card .label span {
+    display: block;
+    color: var(--pink);
+    margin-top: 5px;
+}
+
+.card .image img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card .comment p {
+    line-height: 1.7;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.card:nth-child(2) {
+    top: 30px;
+}
+
+.card:last-child {
+    top: 60px;
 }
